@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvel Timeline</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="./logo.webp" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+
+  <div class="progress" id="progress"></div>
+
+  <header>
+    <div class="brand">
+      <span class="mark">MCU//01</span>
+      <div>
+        <div class="title">HỒ SƠ DÒNG THỜI GIAN THIÊNG LIÊNG</div>
+        <div class="sub">Một trục chính — các nhánh phụ tỏa ra dọc đường</div>
+      </div>
+    </div>
+    <div id="currentEra">ĐANG XEM: <b id="eraNow">—</b></div>
+  </header>
+
+  <section class="hero">
+    <span class="stamp">CẤP ĐỘ TRUY CẬP: KHÁN GIẢ</span>
+    <h1>Dòng thời gian <span>MCU</span><br>— từ khởi nguyên đến Secret Wars</h1>
+    <p>Bản ghi chép toàn bộ sự kiện MCU theo <b>thời điểm diễn ra trong thế giới phim</b>. Trục chính (đường ray giữa
+      trang, màu hổ phách) chạy liên tục từ thời tiền sử đến <i>Secret Wars</i>. Kể từ sự kiện <b>Loki</b> (2021), tại
+      một số điểm trên trục chính sẽ có <b>nhánh phụ tỏa ra</b> (viền đứt màu tím) — đó là các phim/series xảy ra ở vũ
+      trụ song song, rồi cuối cùng tất cả hội tụ lại tại <b>Avengers: Doomsday</b>.</p>
+    <div class="note">Ghi chú: nhiều dự án Phase 4–6 diễn ra gần như đồng thời nên thứ tự chỉ mang tính tương đối. Các
+      mốc chưa phát hành được đánh dấu "SẮP CHIẾU".</div>
+    <div class="legend">
+      <span><i class="dot" style="background:var(--amber)"></i> Trục chính</span>
+      <span><i class="dot" style="background:var(--violet)"></i> Nhánh phụ (đa vũ trụ)</span>
+      <span><i class="dot" style="background:var(--red)"></i> Cú Búng Tay / hội tụ</span>
+    </div>
+  </section>
+
+  <div class="timeline">
+    <div class="rail"></div>
+    <div id="root"></div>
+  </div>
+
+  <div class="fork-note">
+    <div class="flabel">↳ TỪ ĐÂY, NHÁNH PHỤ BẮT ĐẦU XUẤT HIỆN</div>
+    <p>Cái chết của He Who Remains trong <i>Loki</i> phá vỡ Dòng Thời Gian Thiêng Liêng. Từ điểm này, một số sự kiện
+      không còn nằm trên trục chính nữa mà rẽ thành nhánh phụ song song — vẫn mọc ra ngay tại vị trí của nó trên trục
+      chính, chỉ là lệch sang một bên và có viền đứt màu tím.</p>
+  </div>
+
+  <div class="timeline" id="timeline2">
+    <div class="rail"></div>
+    <div id="root2"></div>
+  </div>
+
+  <div class="converge-wrap" id="converge">
+    <div class="era-divider" style="margin-top:10px;"><span class="badge">HỘI TỤ</span>
+      <div class="desc">Mọi nhánh phụ, cộng thêm hai vũ trụ hoàn toàn tách biệt bên ngoài trục chính, cùng đổ về một
+        điểm.</div>
+    </div>
+    <div class="externals" id="externals"></div>
+    <div class="funnel">
+      <svg viewBox="0 0 260 80" fill="none">
+        <path d="M20 0 C20 30, 120 40, 130 55" stroke="#8d7bd1" stroke-width="1.5" stroke-dasharray="4 5" />
+        <path d="M240 0 C240 30, 140 40, 130 55" stroke="#8d7bd1" stroke-width="1.5" stroke-dasharray="4 5" />
+        <path d="M70 20 C90 40, 120 45, 130 55" stroke="#8d7bd1" stroke-width="1.5" stroke-dasharray="4 5" />
+        <path d="M190 20 C170 40, 140 45, 130 55" stroke="#e2a23d" stroke-width="1.5" />
+        <circle cx="130" cy="58" r="5" fill="#0a0d13" stroke="#c1483d" stroke-width="2" />
+        <path d="M130 63 V80" stroke="#2a3040" stroke-width="1.5" />
+      </svg>
+    </div>
+    <div class="spotlight" id="spotlight"></div>
+    <div class="link-down"></div>
+    <div class="finale" id="finale"></div>
+  </div>
+
+  <footer style="text-align:center; font-size: 13px;">
+    Made with ❤️ by <strong style="color: var(--text2);">QuyCo</strong>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
