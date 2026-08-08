@@ -33,7 +33,7 @@ const ERAS_1 = [
   {
     era: "PHASE 3 (ĐẦU) — RẠN NỨT NỘI BỘ", desc: "Avengers chia rẽ, các anh hùng mới xuất hiện khắp thế giới.", items: [
       { title: "Captain America: Civil War", year: "2016", phase: "Phase 3", type: "Phim", poster: "./img/captain_america_civil_war.webp", desc: "Hiệp Định Sokovia chia rẽ Avengers thành hai phe, đẩy Steve Rogers và Tony Stark đến bờ vực tan vỡ." },
-      { title: "Black Widow", year: "2016 (sau Civil War)", phase: "Phase 4", type: "Phim", poster: "./img/black_widow.webp", desc: "Natasha Romanoff đối mặt quá khứ điệp viên Red Room khi âm mưu cũ trỗi dậy." },
+      { title: "Black Widow", year: "2016 (sau Civil War)", phase: "Phase 3", type: "Phim", poster: "./img/black_widow.webp", desc: "Natasha Romanoff đối mặt quá khứ điệp viên Red Room khi âm mưu cũ trỗi dậy." },
       { title: "Spider-Man: Homecoming", year: "2016", phase: "Phase 3", type: "Phim", poster: "./img/spider_man_homecoming.webp", desc: "Peter Parker háo hức chứng minh bản thân với Tony Stark khi đối đầu Vulture." },
       { title: "Doctor Strange", year: "2016 - 2017", phase: "Phase 3", type: "Phim", poster: "./img/doctor_strange.webp", desc: "Stephen Strange tìm đến pháp thuật để chữa lành đôi tay, trở thành người bảo vệ Trái Đất." },
       { title: "Black Panther", year: "2017", phase: "Phase 3", type: "Phim", poster: "./img/black_panther.webp", desc: "T'Challa lên ngôi vua Wakanda, đối đầu Killmonger — kẻ thách thức cả ngai vàng lẫn triết lý cô lập đất nước." },
